@@ -1,0 +1,227 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "3004c63b-10a3-427c-a567-8eff350cc011",
+        "name": "microservice user"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\"recipeId\" : \"coca \"   }"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/api/user/favoriterecipe/ajouter"
+            },
+            "id": "2675052f-37dd-4cdd-97b0-6b2f05f69893",
+            "name": "add recip",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "enabled": true,
+                "name": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoYW5hIiwiaWF0IjoxNTk0ODUzODAyLCJleHAiOjE1OTQ5NDAyMDJ9.Bz8R7bAPqHDsac-vxsrhKRn1IraxHWuNQKrte_Mty_62s4IlXp8nRmjzzMpjd-8W9wfzO0KapOBsVTKYV2mw9A"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\"recipeId\" : \"chocolattt\" }"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/api/user/favoriterecipe/add/hana/coca"
+            },
+            "id": "6629f5f4-3d84-473f-a79b-d300af7250c5",
+            "name": "add recip user",
+            "headers": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "enabled": true,
+                "name": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoYW5hIiwiaWF0IjoxNTk0ODUzODAyLCJleHAiOjE1OTQ5NDAyMDJ9.Bz8R7bAPqHDsac-vxsrhKRn1IraxHWuNQKrte_Mty_62s4IlXp8nRmjzzMpjd-8W9wfzO0KapOBsVTKYV2mw9A"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\"recipeId\" : \"chocolattt\" }"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/api/user/favoriterecipe/favoriterecipe/findall/hana"
+            },
+            "id": "c447ae2d-db3b-418f-a71e-6a650fe20a2e",
+            "name": "getall",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "enabled": true,
+                "name": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJoYW5hIiwiaWF0IjoxNTk0ODUwMjMwLCJleHAiOjE1OTQ5MzY2MzB9.2MIUY73wCkN_6l2CEJ4Kaj-BvC07I9HKrM6VKHFBMBvZeav_a2LWwyuqnM7vOVS4mcEQnfXhR80FtiOe_b1gQg"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{ \"username\" : \"llllll\" ,  \"password\" : \"adminn\" }"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/api/auth/signin"
+            },
+            "id": "3dc00bab-d13b-4530-bf52-b079cb87193b",
+            "name": "signin",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{ \"username\" : \"llllll\" , \"email\" : \"hannple_m@msn.tr\", \"role\" : [ \"user\" ], \"password\" : \"adminn\" }"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:8080",
+              "path": "/api/auth/signup"
+            },
+            "id": "3d1fa858-f78b-433d-95d1-bb5bd5647e42",
+            "name": "signup",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
